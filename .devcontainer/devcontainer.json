@@ -14,7 +14,7 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
-    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.typeCheckingMode": "basic",
     "python.languageServer": "Pylance"
   },
   "extensions": ["ms-python.python", "ms-python.vscode-pylance"],
