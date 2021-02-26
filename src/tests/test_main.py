@@ -1,6 +1,5 @@
-from starlette.testclient import TestClient
-
 from app.main import app
+from starlette.testclient import TestClient
 
 client = TestClient(app)
 
