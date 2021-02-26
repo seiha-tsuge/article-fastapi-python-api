@@ -1,0 +1,22 @@
+{
+  "name": "article-fastapi-python-api",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "api",
+  "workspaceFolder": "/app",
+  "settings": {
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.formatting.blackPath": "/usr/local/bin/black",
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "python.languageServer": "Pylance"
+  },
+  "extensions": ["ms-python.python", "ms-python.vscode-pylance"],
+  "forwardPorts": [8000]
+}
