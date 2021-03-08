@@ -9,3 +9,6 @@ def get_application():
     application.include_router(api_router)
 
     return application
+
+
+app = get_application()
