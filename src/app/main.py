@@ -1,8 +1,14 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+from app.rest.rest import router as api_router
 
 
-@app.get("/ping")
-def pong():
-    return {"ping": "pong!"}
+def get_application():
+    application = FastAPI()
+
+    application.include_router(api_router)
+
+    return application
+
+
+app = get_application()
